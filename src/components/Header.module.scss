@@ -1,0 +1,46 @@
+.header {
+	width: 100%;
+	height: 56px;
+	background-color: #363b44;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+}
+
+.logoContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 3px 0;
+}
+
+.logo {
+	object-fit: contain;
+	width: 50px;
+	height: 50px;
+	animation: rotate 10s linear infinite;
+	transform-origin: center center;
+}
+
+/* Медиа-запрос для десктопных экранов */
+@media (min-width: 768px) {
+	.header {
+		height: 82px;
+	}
+
+	.logo {
+		width: 76px;
+		height: 76px;
+	}
+}
+
+/* Анимация вращения */
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}

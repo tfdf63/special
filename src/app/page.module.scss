@@ -5,12 +5,13 @@
 	align-items: center;
 	min-height: 100vh;
 	padding: 0;
+	padding-top: 56px; /* Отступ для мобильного header */
 }
 
 .imageContainer {
 	position: relative;
 	width: 100%;
-	height: 100vh;
+	height: calc(100vh - 56px); /* Высота минус мобильный header */
 	display: flex;
 	justify-content: center;
 }
@@ -18,7 +19,7 @@
 .mobileImage {
 	display: block;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	max-width: none;
 	object-fit: cover;
 }
@@ -26,13 +27,21 @@
 .desktopImage {
 	display: none;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	max-width: none;
 	object-fit: cover;
 }
 
 /* Медиа-запрос для десктопных экранов */
 @media (min-width: 768px) {
+	.container {
+		padding-top: 82px; /* Отступ для десктопного header */
+	}
+
+	.imageContainer {
+		height: calc(100vh - 82px); /* Высота минус десктопный header */
+	}
+
 	.mobileImage {
 		display: none;
 	}

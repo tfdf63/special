@@ -1,0 +1,141 @@
+.submain {
+	width: 100%;
+}
+
+.overlay {
+	background: #d6c5e7;
+	height: 320px;
+	border-radius: 0;
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.textContent {
+	max-width: 1583px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	gap: 20px;
+}
+
+.description {
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 12px;
+	line-height: 140%;
+	letter-spacing: 0%;
+	text-align: center;
+	color: #333;
+	margin: 0 0 29px 0;
+	padding: 0;
+}
+
+.button {
+	width: 280px;
+	height: 60px;
+	background: #363b44;
+	color: white;
+	border: none;
+	border-radius: 0;
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: 500;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin: 0;
+}
+
+.button:hover {
+	background: #4a515c;
+}
+
+.mobileBreak {
+	display: none;
+}
+
+.desktopBreak {
+	display: none;
+}
+
+/* Мобильная версия */
+@media (max-width: 767px) {
+	.submain {
+		position: relative;
+		z-index: 10;
+		width: 100%;
+	}
+
+	.textContent {
+		padding: 0 10px;
+		max-width: 350px;
+		gap: 2px;
+	}
+
+	.overlay {
+		height: 320px;
+		width: 100%;
+	}
+
+	.mobileBreak {
+		display: inline;
+	}
+}
+
+/* Планшет */
+@media (min-width: 768px) {
+	.overlay {
+		height: 520px;
+		padding: 29px 0 30px 0;
+	}
+
+	.textContent {
+		padding: 0 20px;
+	}
+
+	.description {
+		font-size: 12px;
+		margin-bottom: 29px;
+	}
+
+	.button {
+		width: 320px;
+		height: 70px;
+		font-size: 18px;
+	}
+}
+
+/* Десктоп */
+@media (min-width: 1024px) {
+	.overlay {
+		height: 520px;
+		padding: 29px 0 30px 0;
+	}
+
+	.textContent {
+		padding: 0 60px;
+	}
+
+	.description {
+		font-size: 30px;
+		margin-bottom: 29px;
+	}
+
+	.button {
+		width: 463px;
+		height: 80px;
+		font-size: 20px;
+	}
+
+	.desktopBreak {
+		display: inline;
+	}
+}
