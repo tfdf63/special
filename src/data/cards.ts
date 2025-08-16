@@ -18,10 +18,4 @@ export const cardsData: Card[] = [
 		title: 'Матчевые плакаты с художниками',
 		url: '/project/cards/2',
 	},
-	// {
-	// 	id: 3,
-	// 	image: '/images/cards/3.jpg',
-	// 	title: 'Библиотека клуба «Акрон» в «Автограде»',
-	// 	url: '/project/cards/3',
-	// },
 ]
