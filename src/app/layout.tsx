@@ -89,6 +89,10 @@ export default function RootLayout({
 				<meta name='googlebot' content='notranslate' />
 				<meta name='google' content='notranslate' />
 				<meta httpEquiv='Cache-Control' content='no-transform' />
+				{/* Отключение кэширования */}
+				<meta httpEquiv='Cache-Control' content='no-cache, no-store, must-revalidate' />
+				<meta httpEquiv='Pragma' content='no-cache' />
+				<meta httpEquiv='Expires' content='0' />
 			</head>
 			<body className={`${ibmPlexMono.variable}`}>{children}</body>
 		</html>

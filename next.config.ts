@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
 	output: 'export',
 	distDir: 'out',
 	images: { unoptimized: true },
+	generateBuildId: async () => {
+		return `build-${Date.now()}`
+	},
 
 	// Отключаем кэширование в режиме разработки
 	onDemandEntries: {
