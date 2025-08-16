@@ -1,7 +1,5 @@
-import {
-	processProjectFuture,
-	type ProjectFuture,
-} from '../utils/dataProcessor'
+import { processProjectFuture } from '../utils/dataProcessor'
+import { ProjectFuture } from '../utils/dataProcessor'
 
 // Исходные данные будущих проектов
 const rawProjectFuturs: ProjectFuture[] = [

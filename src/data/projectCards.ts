@@ -1,4 +1,5 @@
-import { processProjectCard, type ProjectCard } from '../utils/dataProcessor'
+import { processProjectCard } from '../utils/dataProcessor'
+import { ProjectCard } from '../utils/dataProcessor'
 
 // Исходные данные проектов
 const rawProjectCards: ProjectCard[] = [
