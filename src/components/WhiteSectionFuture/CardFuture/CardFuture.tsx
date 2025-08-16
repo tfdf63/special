@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './CardFuture.module.scss'
-import { CardFuture as CardFutureType } from '../../data/cardfuturs'
+import { CardFuture as CardFutureType } from '@/data/cardfuturs'
 
 interface CardFutureProps {
 	card: CardFutureType
