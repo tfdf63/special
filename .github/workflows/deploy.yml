@@ -31,5 +31,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./out/ # Убедитесь, что эта директория существует после сборки
-          server-dir: /
+          server-dir: /special/
           dangerous-clean-slate: true
