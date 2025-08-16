@@ -1,0 +1,76 @@
+.sliderContainer {
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.slider {
+	display: flex;
+	gap: 25px;
+	overflow-x: auto;
+	scroll-behavior: auto;
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* IE and Edge */
+	padding: 0;
+	width: 100%;
+	max-width: 100%;
+	touch-action: pan-x pan-y;
+}
+
+.slider::-webkit-scrollbar {
+	display: none; /* Chrome, Safari, Opera */
+}
+
+.cardWrapper {
+	flex-shrink: 0;
+	pointer-events: none;
+}
+
+/* Мобильная версия */
+@media (max-width: 767px) {
+	.sliderContainer {
+		width: 100%;
+		margin: 0;
+		justify-content: flex-start;
+	}
+
+	.slider {
+		gap: 15px;
+		width: 100%;
+		max-width: none;
+		padding-left: 0; /* Убираем левый padding, чтобы карточка была на линии со стрелкой */
+		overflow-x: auto; /* Разрешаем горизонтальный скролл на мобильной */
+		width: 100%; /* Убираем ограничение ширины */
+		max-width: 100%; /* Убираем ограничение максимальной ширины */
+	}
+}
+
+/* Планшет */
+@media (min-width: 768px) and (max-width: 1023px) {
+	.slider {
+		gap: 25px;
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+/* Десктоп */
+@media (min-width: 1024px) {
+	.slider {
+		gap: 60px;
+		overflow-x: hidden;
+		width: 100%;
+		max-width: 100%;
+		justify-content: flex-start;
+	}
+
+	.sliderContainer {
+		width: 100%;
+		overflow-x: hidden;
+		justify-content: flex-start;
+	}
+}

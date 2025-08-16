@@ -1,0 +1,150 @@
+.page {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.main {
+	flex: 1;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px 0;
+}
+
+.content {
+	width: 1583px;
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: left;
+	box-sizing: border-box;
+	min-height: calc(100vh - 80px);
+	margin-top: 0;
+}
+
+.content h1 {
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: 600;
+	font-size: 2rem;
+	color: #363b44;
+	margin: 0;
+}
+
+.content h2 {
+	font-family: 'Akademia', serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 64px;
+	color: #000000;
+	margin: 0;
+	margin-top: 45px;
+	width: 60%;
+	max-width: none;
+	line-height: 1.1;
+	word-break: normal;
+	overflow-wrap: normal;
+	text-align: left;
+}
+
+.content .subtitle {
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 30px;
+	color: #000000;
+	margin: 0;
+	margin-top: 45px;
+	word-break: normal;
+	overflow-wrap: normal;
+	text-align: left;
+}
+
+.content h3 {
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 40px;
+	color: #000000;
+	margin: 0;
+	margin-top: 45px;
+	word-break: normal;
+	overflow-wrap: normal;
+	text-align: left;
+}
+
+.content .subtitle p {
+	margin: 0;
+	margin-bottom: 20px;
+	word-break: normal;
+	overflow-wrap: normal;
+}
+
+.content .subtitle p:last-child {
+	margin-bottom: 0;
+}
+
+.content p {
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: 500;
+	font-size: 1.125rem;
+	color: #000;
+	margin: 0;
+}
+
+.content a {
+	color: #000;
+	text-decoration: underline;
+	transition: color 0.3s ease;
+}
+
+.content a:hover {
+	color: #666;
+}
+
+/* Мобильная версия */
+@media (max-width: 767px) {
+	.main {
+		padding: 20px 0;
+	}
+
+	.content {
+		width: 336px;
+	}
+
+	.content h1 {
+		font-size: 1.5rem;
+	}
+
+	.content h2 {
+		font-size: 26px;
+		margin-top: 18px;
+		width: 100%;
+	}
+
+	.content .subtitle {
+		font-size: 12px;
+		margin-top: 18px;
+		width: 100%;
+	}
+
+	.content h3 {
+		font-size: 16px;
+		margin-top: 18px;
+		width: 100%;
+	}
+
+	.content p {
+		font-size: 1rem;
+	}
+}
+
+/* Планшет */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Десктоп */
+@media (min-width: 1024px) {
+}

@@ -1,0 +1,136 @@
+.footer {
+	width: 100%;
+	background-color: #363b44;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px 0;
+}
+
+.content {
+	width: 100%;
+	max-width: 1583px;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 383px;
+}
+
+.logoContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo {
+	width: 136px;
+	height: 136px;
+	object-fit: contain;
+}
+
+.centerSection {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 26px;
+}
+
+.title {
+	font-family: 'Akademia', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 70px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #d6c5e7;
+	margin: 0;
+	line-height: 1;
+}
+
+.socialIcons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 40px;
+	height: 41px;
+}
+
+.socialLink {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: opacity 0.3s ease;
+}
+
+.socialLink:hover {
+	opacity: 0.8;
+}
+
+.socialIcon {
+	width: 41px;
+	height: 41px;
+	object-fit: contain;
+}
+
+/* Планшет */
+@media (min-width: 768px) and (max-width: 1023px) {
+	.content {
+		padding: 0 40px;
+		gap: 200px;
+	}
+
+	.title {
+		font-size: 50px;
+	}
+
+	.logo {
+		width: 100px;
+		height: 100px;
+	}
+
+	.socialIcon {
+		width: 28px;
+		height: 28px;
+	}
+}
+
+/* Мобильная версия */
+@media (max-width: 767px) {
+	.footer {
+		padding: 20px 0;
+	}
+
+	.content {
+		padding: 0 20px;
+		flex-direction: column;
+		gap: 15px;
+	}
+
+	.centerSection {
+		gap: 15px;
+	}
+
+	.logoContainer {
+		display: none;
+	}
+
+	.title {
+		font-size: 36px;
+	}
+
+	.logo {
+		width: 80px;
+		height: 80px;
+	}
+
+	.socialIcons {
+		gap: 35px;
+	}
+
+	.socialIcon {
+		width: 32px;
+		height: auto;
+	}
+}

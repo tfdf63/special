@@ -1,0 +1,20 @@
+.backLink {
+	display: flex;
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 30px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	text-decoration: none;
+	color: #000000;
+	transition: opacity 0.3s ease;
+
+	&:hover {
+		opacity: 0.7;
+	}
+
+	@media (max-width: 768px) {
+		font-size: 12px;
+	}
+}

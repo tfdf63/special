@@ -1,0 +1,151 @@
+.modalOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(5px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 10000;
+	animation: fadeIn 0.3s ease;
+}
+
+.modalContent {
+	position: relative;
+	width: 1329px;
+	background: #d6c5e7;
+	border-radius: 0;
+	padding: 40px;
+	box-sizing: border-box;
+	animation: slideIn 0.3s ease;
+}
+
+.closeButton {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	width: 30px;
+	height: 30px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: opacity 0.3s ease;
+	z-index: 10001;
+}
+
+.closeButton:hover {
+	opacity: 0.7;
+}
+
+.closeIcon {
+	width: 30px;
+	height: 30px;
+	object-fit: contain;
+}
+
+.textContent {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 30px;
+	padding-top: 35px; // Отступ сверху
+	padding-bottom: 35px; // Отступ снизу
+}
+
+.textBlock {
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 36px;
+	line-height: 140%;
+	color: #000;
+	margin: 0;
+	text-align: center;
+}
+
+.ticketLink {
+	color: #000;
+	text-decoration: underline;
+	transition: opacity 0.3s ease;
+}
+
+.ticketLink:hover {
+	opacity: 0.7;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideIn {
+	from {
+		transform: scale(0.9);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+/* Адаптивность для планшетов */
+@media (max-width: 1400px) {
+	.modalContent {
+		width: 90%;
+		max-width: 1329px;
+		height: auto;
+		padding: 30px;
+	}
+
+	.textBlock {
+		font-size: 20px;
+	}
+
+	.closeButton {
+		top: 20px;
+		right: 20px;
+	}
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+	.modalContent {
+		width: 95%;
+		height: auto;
+		padding: 20px;
+	}
+
+	.textContent {
+		gap: 20px;
+		padding-top: 50px;
+	}
+
+	.textBlock {
+		font-size: 12px;
+	}
+
+	.closeButton {
+		top: 15px;
+		right: 15px;
+		width: 25px;
+		height: 25px;
+	}
+
+	.closeIcon {
+		width: 25px;
+		height: 25px;
+	}
+}

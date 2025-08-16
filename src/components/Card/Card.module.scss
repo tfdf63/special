@@ -1,0 +1,93 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	min-width: 463px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	pointer-events: auto;
+	-webkit-touch-callout: none;
+	-webkit-tap-highlight-color: transparent;
+	transition: transform 0.2s ease;
+	will-change: auto;
+	isolation: isolate;
+}
+
+.card:hover {
+	transform: translateY(-2px);
+}
+
+.imageContainer {
+	width: 463px;
+	height: 463px;
+	margin-bottom: 28px;
+	overflow: hidden;
+	border-radius: 0;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	pointer-events: none;
+	user-drag: none;
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-o-user-drag: none;
+}
+
+.title {
+	font-family: 'IBM Plex Mono', monospace;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 28px;
+	line-height: 120%;
+	text-align: start;
+	margin: 0;
+	max-width: 463px;
+	word-wrap: break-word;
+	color: #363b44;
+}
+
+/* Планшет */
+@media (min-width: 768px) and (max-width: 1023px) {
+	.card {
+		min-width: 230px;
+	}
+
+	.imageContainer {
+		width: 230px;
+		height: 230px;
+		margin-bottom: 28px;
+	}
+
+	.title {
+		font-size: 14px;
+		max-width: 230px;
+	}
+}
+
+/* Мобильная версия */
+@media (max-width: 767px) {
+	.card {
+		min-width: 230px;
+	}
+
+	.imageContainer {
+		width: 230px;
+		height: 230px;
+		margin-bottom: 28px;
+	}
+
+	.title {
+		font-size: 14px;
+		max-width: 230px;
+		margin-bottom: 25px;
+	}
+}
