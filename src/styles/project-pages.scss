@@ -104,6 +104,29 @@
 	color: #666;
 }
 
+/* Стили для выделенных ссылок */
+.content .link-accent {
+	font-weight: 700 !important;
+	color: #000 !important;
+	transition: all 0.3s ease;
+}
+
+.content .link-accent:hover {
+	color: #666 !important;
+}
+
+/* Альтернативный способ - более специфичный селектор */
+.content p .link-accent,
+.content .subtitle .link-accent {
+	font-weight: 700 !important;
+	color: #000 !important;
+}
+
+.content p .link-accent:hover,
+.content .subtitle .link-accent:hover {
+	color: #666 !important;
+}
+
 /* Мобильная версия */
 @media (max-width: 767px) {
 	.main {

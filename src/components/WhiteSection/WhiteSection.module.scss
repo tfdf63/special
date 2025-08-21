@@ -6,6 +6,11 @@
 	align-items: flex-start;
 	justify-content: center;
 	padding-top: 0;
+	/* Улучшаем поддержку touch-событий на iOS */
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 .content {
@@ -13,16 +18,21 @@
 	padding: 0 20px;
 	text-align: center;
 	margin: 0 auto;
+	/* Улучшаем поддержку touch-событий на iOS */
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
 }
 
 .headerSection {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	margin: 25px 0;
+	position: relative;
 }
 
 .arrowButton {
+	position: absolute;
 	width: 37px;
 	height: 39px;
 	border: none;
@@ -33,6 +43,14 @@
 	justify-content: center;
 	transition: all 0.3s ease;
 	padding: 0;
+}
+
+.arrowButton:first-child {
+	left: 0;
+}
+
+.arrowButton:last-child {
+	right: 0;
 }
 
 .arrowButton:hover {
@@ -68,16 +86,25 @@
 @media (max-width: 767px) {
 	.whiteSection {
 		height: auto;
+		/* Улучшаем поддержку touch-событий на iOS на мобильной */
+		-webkit-overflow-scrolling: touch;
+		touch-action: manipulation;
 	}
 
 	.content {
 		padding: 0 15px;
 		width: 100%;
 		max-width: 100%;
+		/* Улучшаем поддержку touch-событий на iOS на мобильной */
+		-webkit-overflow-scrolling: touch;
+		touch-action: manipulation;
 	}
 
 	.headerSection {
 		margin: 25px 0;
+		/* Улучшаем поддержку touch-событий на iOS на мобильной */
+		-webkit-tap-highlight-color: transparent;
+		-webkit-touch-callout: none;
 	}
 
 	.sectionTitle {

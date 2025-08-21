@@ -7,6 +7,12 @@ export interface Card {
 
 export const cardsData: Card[] = [
 	{
+		id: 6,
+		image: '/images/cards/6.jpeg',
+		title: 'Фотографический опен-колл',
+		url: '/project/cards/6',
+	},
+	{
 		id: 1,
 		image: '/images/cards/1.jpg',
 		title: 'Опен-колл для иллюстраторов и\u00A0художников',

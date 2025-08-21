@@ -6,7 +6,10 @@
 	justify-content: flex-start;
 	overflow: hidden;
 	overflow-y: hidden;
-	pointer-events: none;
+	/* Убираем pointer-events: none для работы touch-событий */
+	/* Улучшаем поддержку touch-событий на iOS */
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
 }
 
 .slider {
@@ -17,10 +20,16 @@
 	scroll-behavior: auto;
 	scrollbar-width: none; /* Firefox */
 	-ms-overflow-style: none; /* IE and Edge */
+	-webkit-overflow-scrolling: touch; /* iOS smooth scrolling */
 	padding: 0;
 	width: 100%;
 	max-width: 100%;
-	touch-action: pan-x;
+	touch-action: pan-x; /* Разрешаем горизонтальный свайп */
+	/* Дополнительные свойства для iOS */
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 .slider::-webkit-scrollbar {
@@ -29,7 +38,12 @@
 
 .cardWrapper {
 	flex-shrink: 0;
-	pointer-events: none;
+	/* Убираем pointer-events: none для работы touch-событий */
+	/* Улучшаем поддержку touch-событий на iOS */
+	-webkit-tap-highlight-color: transparent;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none;
 }
 
 /* Мобильная версия */
@@ -39,6 +53,9 @@
 		margin: 0;
 		justify-content: flex-start;
 		overflow-y: hidden;
+		/* Улучшаем поддержку touch-событий на мобильной */
+		-webkit-overflow-scrolling: touch;
+		touch-action: pan-x;
 	}
 
 	.slider {
@@ -50,6 +67,24 @@
 		overflow-y: hidden;
 		width: 100%; /* Убираем ограничение ширины */
 		max-width: 100%; /* Убираем ограничение максимальной ширины */
+		-webkit-overflow-scrolling: touch; /* iOS smooth scrolling */
+		touch-action: pan-x; /* Разрешаем горизонтальный свайп на мобильной */
+		/* Дополнительные свойства для iOS на мобильной */
+		-webkit-tap-highlight-color: transparent;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		user-select: none;
+		/* Убираем возможные конфликты с touch-событиями */
+		pointer-events: auto;
+	}
+
+	.cardWrapper {
+		/* Улучшаем поддержку touch-событий на мобильной */
+		-webkit-tap-highlight-color: transparent;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		user-select: none;
+		pointer-events: auto;
 	}
 }
 
