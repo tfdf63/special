@@ -7,19 +7,55 @@
 	justify-content: center;
 	z-index: 1000;
 }
-r .logoContainer {
+
+.logoContainer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 3px 0;
 }
 
-.logo {
-	object-fit: contain;
-	width: 50px;
-	height: 50px;
-	/* animation: rotate 10s linear infinite; */
+.logoWrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 45px;
+	height: 45px;
+}
+
+.logoA {
+	position: absolute;
+	z-index: 2;
+	width: 25px;
+	height: 25px;
+
+	svg,
+	path,
+	rect,
+	circle,
+	polygon {
+		fill: #d8c4e5 !important;
+		stroke: #d8c4e5 !important;
+	}
+}
+
+.logoT {
+	position: absolute;
+	z-index: 1;
+	width: 45px;
+	height: 45px;
+	animation: rotate 12s linear infinite;
 	transform-origin: center center;
+
+	svg,
+	path,
+	rect,
+	circle,
+	polygon {
+		fill: #d8c4e5 !important;
+		stroke: #d8c4e5 !important;
+	}
 }
 
 /* Медиа-запрос для десктопных экранов */
@@ -28,7 +64,18 @@ r .logoContainer {
 		height: 82px;
 	}
 
-	.logo {
+	.logoWrapper {
+		margin: 12px 0;
+		width: 66px;
+		height: 66px;
+	}
+
+	.logoA {
+		width: 46px;
+		height: 46px;
+	}
+
+	.logoT {
 		width: 76px;
 		height: 76px;
 	}

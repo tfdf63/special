@@ -27,29 +27,36 @@ const Ticker: React.FC<TickerProps> = ({ speed = 50 }) => {
 	}, [speed])
 
 	return (
-		<div className={styles.ticker}>
-			<div
-				className={styles.tickerContent}
-				style={{ transform: `translateX(${position}px)` }}
-			>
-				{/* Дублируем контент для бесшовной анимации */}
-				{Array.from({ length: 10 }).map((_, index) => (
-					<div key={index} className={styles.tickerItem}>
-						<div className={styles.logoContainer}>
-							<Image
-								src='/images/logo3.png'
-								alt='Логотип АКРОН'
-								width={56}
-								height={56}
-								className={styles.logo}
-								priority
-							/>
+		<a
+			href='https://matchday.fcakron.ru/'
+			target='_blank'
+			rel='noopener noreferrer'
+			className={styles.tickerLink}
+		>
+			<div className={styles.ticker}>
+				<div
+					className={styles.tickerContent}
+					style={{ transform: `translateX(${position}px)` }}
+				>
+					{/* Дублируем контент для бесшовной анимации */}
+					{Array.from({ length: 10 }).map((_, index) => (
+						<div key={index} className={styles.tickerItem}>
+							<div className={styles.logoContainer}>
+								<Image
+									src='/images/logo3.png'
+									alt='Логотип АКРОН'
+									width={56}
+									height={56}
+									className={styles.logo}
+									priority
+								/>
+							</div>
+							<span className={styles.text}>ХОЧУ НА МАТЧ АКРОНА</span>
 						</div>
-						<span className={styles.text}>ХОЧУ НА МАТЧ АКРОНА</span>
-					</div>
-				))}
+					))}
+				</div>
 			</div>
-		</div>
+		</a>
 	)
 }
 

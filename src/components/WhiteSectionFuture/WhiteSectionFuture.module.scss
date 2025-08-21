@@ -86,8 +86,7 @@
 	}
 
 	.arrowButton {
-		width: 18px;
-		height: 19px;
+		display: none; /* Скрываем стрелки на мобильной версии */
 	}
 
 	.arrowImage {

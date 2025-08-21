@@ -70,12 +70,11 @@
 /* Мобильная версия - специальные настройки для bg2.jpg */
 @media (max-width: 767px) {
 	.main {
-		background: url('/images/main/bg2.jpg') center center / 431px 252px
-			no-repeat;
+		background: url('/images/main/bg2.jpg') center center / cover no-repeat;
 		position: relative;
 		height: 219px;
-		width: 375px;
-		margin: 0 auto;
+		width: 100%;
+		margin: 0;
 	}
 
 	.mobileOverlay {

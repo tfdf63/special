@@ -18,10 +18,6 @@
 	isolation: isolate;
 }
 
-.card:hover {
-	transform: translateY(-2px);
-}
-
 .imageContainer {
 	width: 463px;
 	height: 463px;
@@ -77,12 +73,14 @@
 @media (max-width: 767px) {
 	.card {
 		min-width: 230px;
+		overflow-y: hidden;
 	}
 
 	.imageContainer {
 		width: 230px;
 		height: 230px;
 		margin-bottom: 28px;
+		overflow-y: hidden;
 	}
 
 	.title {

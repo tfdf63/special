@@ -19,10 +19,6 @@
 	isolation: isolate;
 }
 
-.card:hover {
-	transform: translateY(-2px);
-}
-
 .imageContainer {
 	width: 463px;
 	height: 463px;
@@ -83,12 +79,14 @@
 	.card {
 		width: 230px;
 		flex-shrink: 0;
+		overflow-y: hidden;
 	}
 
 	.imageContainer {
 		width: 230px;
 		height: 230px;
 		margin-bottom: 28px;
+		overflow-y: hidden;
 	}
 
 	.title {
