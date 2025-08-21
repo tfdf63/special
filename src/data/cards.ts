@@ -14,7 +14,7 @@ export const cardsData: Card[] = [
 	},
 	{
 		id: 2,
-		image: '/images/cards/2.jpg',
+		image: '/images/cards/2.jpeg',
 		title: 'Постеры «А\u00A0что ты\u00A0знаешь про\u00A0Акрон?»',
 		url: '/project/cards/2',
 	},

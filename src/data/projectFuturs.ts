@@ -194,12 +194,6 @@ const rawProjectFuturs: ProjectFuture[] = [
 					'<iframe src="https://vk.com/video_ext.php?oid=-175141666&id=456241814&hd=3&autoplay=1" width="1280" height="720" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>',
 				],
 			},
-			{
-				type: 'text',
-				content: [
-					'<iframe src="https://vk.com/video_ext.php?oid=-175141666&id=456241814&autoplay=1" width="100%" height="240" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>',
-				],
-			},
 		],
 	},
 	{
@@ -221,38 +215,6 @@ const rawProjectFuturs: ProjectFuture[] = [
 					'/images/projects/futurs/8_4.jpeg',
 					'/images/projects/futurs/8_5.jpeg',
 					'/images/projects/futurs/8_6.jpeg',
-				],
-			},
-		],
-	},
-	{
-		id: 71,
-		title: 'Разработка экосистемы для&nbsp;интернета вещей',
-		content: [
-			{
-				type: 'text',
-				content: [
-					'Комплексная экосистема для&nbsp;управления и&nbsp;мониторинга устройств интернета вещей, обеспечивающая безопасное подключение, сбор данных и&nbsp;удаленное управление различными устройствами.',
-					'Система разработана с&nbsp;учетом современных требований к&nbsp;безопасности и&nbsp;масштабируемости, поддерживает различные протоколы связи и&nbsp;типы устройств.',
-				],
-			},
-			{
-				type: 'heading',
-				content: 'Архитектура системы',
-			},
-			{
-				type: 'slider',
-				content: ['/images/projects/1.png', '/images/projects/2.png'],
-			},
-			{
-				type: 'subheading',
-				content: 'Безопасность и&nbsp;приватность',
-			},
-			{
-				type: 'text',
-				content: [
-					'Реализованы современные протоколы безопасности для&nbsp;защиты персональных данных клиентов и&nbsp;финансовых транзакций.',
-					'Система обеспечивает высокую доступность и&nbsp;отказоустойчивость, что критично для&nbsp;коммерческих проектов.',
 				],
 			},
 		],

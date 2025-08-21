@@ -50,14 +50,14 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
 
 				<div className={styles.textContent}>
 					<p className={styles.textBlock}>
-						Акрон — футбольный клуб из Тольятти, представляющий
-						промышленно-металлургический холдинг AKRON HOLDING. Основан в 2018
-						году.
+						Акрон — футбольный клуб из&nbsp;Тольятти, представляющий
+						промышленно-металлургический холдинг AKRON HOLDING. Основан
+						в&nbsp;2018 году.
 					</p>
 
 					<p className={styles.textBlock}>
-						Мы играем в Российской премьер-лиге с мастодонтами отечественного
-						футбола.
+						Мы&nbsp;играем в&nbsp;Российской премьер-лиге с&nbsp;мастодонтами
+						отечественного футбола.
 					</p>
 
 					<p className={styles.textBlock}>
@@ -68,7 +68,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
 						>
 							приобрести билет
 						</a>{' '}
-						на матчи на Солидарность Самара Арена.
+						на&nbsp;матчи на&nbsp;Солидарность Самара Арена.
 					</p>
 				</div>
 			</div>

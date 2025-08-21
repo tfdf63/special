@@ -148,3 +148,20 @@
 /* Десктоп */
 @media (min-width: 1024px) {
 }
+
+/* Стили для iframe */
+.content iframe {
+	width: 1280px;
+	height: 720px;
+	border: none;
+	border-radius: 0;
+	margin-bottom: 20px;
+}
+
+/* Мобильная версия для iframe */
+@media (max-width: 767px) {
+	.content iframe {
+		width: 100% !important;
+		height: 240px !important;
+	}
+}
