@@ -7,6 +7,12 @@ export interface CardFuture {
 
 export const cardFutursData: CardFuture[] = [
 	{
+		id: 7,
+		image: '/images/cardfuturs/7.png',
+		title: 'Золотые Зубы — «Э.В.А»',
+		url: '/project/futurs/7',
+	},
+	{
 		id: 1,
 		image: '/images/cardfuturs/1.jpeg',
 		title: 'Мерч «Простые вещи»',
@@ -41,12 +47,6 @@ export const cardFutursData: CardFuture[] = [
 		image: '/images/cardfuturs/6.png',
 		title: 'THE DAWLESS — Вместе до\u00A0конца',
 		url: '/project/futurs/6',
-	},
-	{
-		id: 7,
-		image: '/images/cardfuturs/7.png',
-		title: 'Золотые Зубы — «Э.В.А»',
-		url: '/project/futurs/7',
 	},
 	{
 		id: 8,

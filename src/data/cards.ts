@@ -32,8 +32,8 @@ export const cardsData: Card[] = [
 	},
 	{
 		id: 4,
-		image: '/images/cards/4.jpg',
-		title: 'Матчевые плакаты с\u00A0художниками',
+		image: '/images/cards/4.png',
+		title: 'Матчевые постеры',
 		url: '/project/cards/4',
 	},
 	{
