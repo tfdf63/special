@@ -96,6 +96,8 @@ export default function RootLayout({
 				/>
 				<meta httpEquiv='Pragma' content='no-cache' />
 				<meta httpEquiv='Expires' content='0' />
+				{/* Код верификации */}
+				<meta name='verification' content='57fed022ba858e31' />
 				{/* Яндекс.Метрика */}
 				<script src='/yandex-metrika.js' async></script>
 			</head>
